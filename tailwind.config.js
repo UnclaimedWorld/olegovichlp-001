@@ -4,6 +4,9 @@ export default {
     './src/**/*.tsx'
   ],
   theme: {
+    fontFamily: {
+      sans: 'Manrope, sans-serif'
+    },
     extend: {
       colors: {
         paragraph: {
@@ -24,6 +27,9 @@ export default {
       },
       spacing: {
         13: '3.25rem'
+      },
+      boxShadow: {
+        card: '0px 4px 12px 0px #F9F9F9'
       }
     },
   },

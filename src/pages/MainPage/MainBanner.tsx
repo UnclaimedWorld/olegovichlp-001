@@ -2,6 +2,7 @@ import tw from "tailwind-styled-components";
 import AppButton from "../../components/AppButton";
 import humanImage from '../../assets/img/human-main-01.png?url';
 import bannerArrow from '../../assets/img/banner-arrow.svg?url';
+import AppContainer from "../../components/AppContainer";
 
 const Main = tw.article`
     h-screen
@@ -13,12 +14,8 @@ const Main = tw.article`
     bg-[position:0px_100%,_0px_100%,_0px_0px]
     bg-no-repeat
 `
-const Container = tw.div`
-    w-[1190px]
-    max-w-full
-    mx-auto
+const Container = tw(AppContainer)`
     h-full
-    flex
 `
 const FigureWrap = tw.figure`
     w-[404px]
