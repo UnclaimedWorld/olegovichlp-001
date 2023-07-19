@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.svg-icon path:not([stroke]):not([fill="none"]),
+	.svg-icon path[fill]:not([fill="none"]) {
+		fill: currentColor;
+	}
+	.svg-icon path[stroke]:not([stroke="none"]) {
+		stroke: currentColor;
+	}
+}
