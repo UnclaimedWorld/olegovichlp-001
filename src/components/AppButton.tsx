@@ -5,6 +5,10 @@ const themesBG = {
     default: 'bg-primary',
     gray: 'bg-border'
 }
+const themesBorder = {
+    default: 'border-primary',
+    gray: 'border-border'
+}
 const themesColor = {
     default: 'text-white',
     gray: 'text-primary'
@@ -19,7 +23,7 @@ interface ButtonProps {
 
 const Button = tw.button<ButtonProps>`
     border
-    ${p => themesBG[p.theme || 'default']}
+    ${p => themesBorder[p.theme || 'default']}
     ${p => (p.outline ? 'bg-transparent' : themesBG[p.theme || 'default'])}
     font-extrabold
     h-[54px]

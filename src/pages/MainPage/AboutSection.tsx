@@ -2,32 +2,31 @@ import tw from "tailwind-styled-components";
 import AppContainer from "../../components/AppContainer";
 import quotes from '../../assets/img/quotes.svg?url';
 import bannerArrow from '../../assets/img/banner-arrow.svg?url';
+import AboutHeading from "../../components/AboutHeading";
 
 const Main = tw.article`
-    bg-[linear-gradient(90deg,#337ED9,#337ED9)]
-    bg-[size:calc((100vw-1190px)/2+383px)_100%]
+    bg-[linear-gradient(90deg,#337ED9,#337ED9),_linear-gradient(90deg,#fff,#fff)]
+    bg-[size:calc((100vw-1190px)/2+383px)_100%,_100%]
     bg-[position:100%_0px]
     h-screen
     max-h-[1000px]
     min-h-[900px]
     bg-no-repeat
+    flex
+    items-center
 `
 const ContentImage = tw.img`
     w-[484px]
     h-[680px]
     object-cover
-    self-center
+    self-end
 `
 const ContentWrap = tw.section`
     pl-[100px]
     mr-[120px]
     w-[584px]
 `
-const Title = tw.h2`
-    text-4xl
-    leading-[44px]
-    -tracking-[0.36px]
-    font-extrabold
+const Title = tw(AboutHeading)`
     mb-9
 `
 const Description = tw.p`
@@ -52,6 +51,7 @@ const CardMarketing = tw.li`
     shadow-card
     flex
     font-normal
+    last:mb-0
 `
 const CardIcon = tw.img`
     w-4
@@ -95,7 +95,7 @@ const marketingList = [
         ]
     },
     {
-        id: 1,
+        id: 3,
         important: 'Ментор программы поддержки',
         text: ' молодёжных инновационных идей и стартап-проектов при ПРООН',
         logos: [
@@ -107,7 +107,7 @@ const marketingList = [
 export default function AboutSection() {
     return (
         <Main>
-            <AppContainer className="items-center h-full">
+            <AppContainer>
                 <ContentWrap>
                     <Title>Совсем немного <div className="text-primary">обо мне</div></Title>
                     <Description><Quotes style={{backgroundImage: `url(${quotes})`}}/>Я помогаю бизнесу и предпринимателям Узбекистана строить правильную маркетинговую стратегию, определять эффективные и проверенные рекламные каналы и инструменты, вследствие – увеличивать продажи и рентабельность бизнеса. Работая со мной, вы сможете не совершать ошибки в маркетинге и рекламе, которые обходятся слишком дорого.</Description>

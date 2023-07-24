@@ -9,8 +9,8 @@ const Main = tw.article`
     min-h-[800px]
     max-h-[1000px]
     w-full
-    bg-[size:max(((100vw-1190px)/2_-_104px),0px)_272px,_calc((100vw-1190px)/2+174px)_545px,_calc((100vw-1190px)/2+404px)_100%]
-    bg-[linear-gradient(90deg,#F9F8FC,#F9F8FC),linear-gradient(90deg,white,white),linear-gradient(90deg,currentColor,currentColor)]
+    bg-[size:max(((100vw-1190px)/2_-_104px),0px)_272px,_calc((100vw-1190px)/2+174px)_545px,_calc((100vw-1190px)/2+404px)_100%,_100%]
+    bg-[linear-gradient(90deg,#F9F8FC,#F9F8FC),linear-gradient(90deg,white,white),linear-gradient(90deg,currentColor,currentColor),linear-gradient(90deg,#fff,#fff)]
     bg-[position:0px_100%,_0px_100%,_0px_0px]
     bg-no-repeat
 `
