@@ -107,7 +107,7 @@ const marketingList = [
 export default function AboutSection() {
     return (
         <Main>
-            <AppContainer>
+            <AppContainer className="flex">
                 <ContentWrap>
                     <Title>Совсем немного <div className="text-primary">обо мне</div></Title>
                     <Description><Quotes style={{backgroundImage: `url(${quotes})`}}/>Я помогаю бизнесу и предпринимателям Узбекистана строить правильную маркетинговую стратегию, определять эффективные и проверенные рекламные каналы и инструменты, вследствие – увеличивать продажи и рентабельность бизнеса. Работая со мной, вы сможете не совершать ошибки в маркетинге и рекламе, которые обходятся слишком дорого.</Description>

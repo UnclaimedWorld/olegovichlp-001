@@ -93,28 +93,26 @@ export default function ServicesSection() {
     return (
         <Section style={{backgroundImage: "url('/img/services-background.png')"}}>
             <AppContainer>
-                <div className="w-full">
-                    <Heading>
-                        Развивайте Ваш бизнес <div className="text-primary">вместе со мной</div>
-                    </Heading>
-                    <ColsWrap>
-                        <Col>
-                            <Description><b>Стратегии и кампании</b>, над которыми<br/> мы будем работать и создавать вместе,<br/> не только основаны на проверенных принципах,<br/> но что более важно, <b>проверены «в бою»<br/> на компаниях Узбекистана.</b></Description>
-                            <ImgWrap>
-                                <ImgMain src="/img/services-img.png"/>
-                            </ImgWrap>
-                        </Col>
-                        <Col className="-mt-2">
-                            { serviceList.map((s, idx) => (
-                                <ServiceCard key={s.id}>
-                                    <ServiceHeading>{s.name}</ServiceHeading>
-                                    <ServiceDescription>{s.text}</ServiceDescription>
-                                    <ServiceButton outline={idx >= 1}>{s.button}</ServiceButton>
-                                </ServiceCard>
-                            )) }
-                        </Col>
-                    </ColsWrap>
-                </div>
+                <Heading>
+                    Развивайте Ваш бизнес <div className="text-primary">вместе со мной</div>
+                </Heading>
+                <ColsWrap>
+                    <Col>
+                        <Description><b>Стратегии и кампании</b>, над которыми<br/> мы будем работать и создавать вместе,<br/> не только основаны на проверенных принципах,<br/> но что более важно, <b>проверены «в бою»<br/> на компаниях Узбекистана.</b></Description>
+                        <ImgWrap>
+                            <ImgMain src="/img/services-img.png"/>
+                        </ImgWrap>
+                    </Col>
+                    <Col className="-mt-2">
+                        { serviceList.map((s, idx) => (
+                            <ServiceCard key={s.id}>
+                                <ServiceHeading>{s.name}</ServiceHeading>
+                                <ServiceDescription>{s.text}</ServiceDescription>
+                                <ServiceButton outline={idx >= 1}>{s.button}</ServiceButton>
+                            </ServiceCard>
+                        )) }
+                    </Col>
+                </ColsWrap>
             </AppContainer>
         </Section>
     );

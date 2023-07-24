@@ -16,6 +16,7 @@ const Main = tw.article`
 `
 const Container = tw(AppContainer)`
     h-full
+    flex
 `
 const FigureWrap = tw.figure`
     w-[404px]

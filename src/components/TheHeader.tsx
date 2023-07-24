@@ -1,5 +1,6 @@
 import tw from "tailwind-styled-components";
 import AppButton from "./AppButton";
+import AppContainer from "./AppContainer";
 
 const Header = tw.header`
     absolute
@@ -7,10 +8,7 @@ const Header = tw.header`
     right-0
     top-[46px]
 `
-const Container = tw.div`
-    w-[1190px]
-    max-w-full
-    mx-auto
+const Container = tw(AppContainer)`
     flex
     items-center
 `

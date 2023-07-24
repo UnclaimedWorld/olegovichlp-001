@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection";
 import MainBanner from "./MainBanner";
+import NewsSection from "./NewsSection";
 import ReviewsSection from "./ReviewsSection";
 import ServicesSection from "./ServicesSection";
 
@@ -10,6 +11,7 @@ export default function MainPage() {
             <AboutSection/>
             <ServicesSection/>
             <ReviewsSection/>
+            <NewsSection/>
         </main>
     )
 }

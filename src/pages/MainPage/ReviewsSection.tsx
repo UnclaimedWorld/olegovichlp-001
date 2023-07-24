@@ -80,19 +80,17 @@ export default function ReviewsSection() {
     return (
         <Main>
             <AppContainer>
-                <div className="w-full">
-                    <Title>Отзывы <div className="text-primary">реальных клиентов</div></Title>
-                    <List>
-                        {reviewsList.map(r => (
-                            <Item key={r.id} primary={r.primary}>
-                                <ItemImage src={r.avatar}/>
-                                <ItemTitle>{r.name}</ItemTitle>
-                                <ItemSub>{r.sub}</ItemSub>
-                                <ItemDescription>{r.description}</ItemDescription>
-                            </Item>
-                        ))}
-                    </List>
-                </div>
+                <Title>Отзывы <div className="text-primary">реальных клиентов</div></Title>
+                <List>
+                    {reviewsList.map(r => (
+                        <Item key={r.id} primary={r.primary}>
+                            <ItemImage src={r.avatar}/>
+                            <ItemTitle>{r.name}</ItemTitle>
+                            <ItemSub>{r.sub}</ItemSub>
+                            <ItemDescription>{r.description}</ItemDescription>
+                        </Item>
+                    ))}
+                </List>
             </AppContainer>
         </Main>
     )
