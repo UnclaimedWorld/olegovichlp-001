@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection";
 import MainBanner from "./MainBanner";
+import ReviewsSection from "./ReviewsSection";
 import ServicesSection from "./ServicesSection";
 
 export default function MainPage() {
@@ -8,6 +9,7 @@ export default function MainPage() {
             <MainBanner/>
             <AboutSection/>
             <ServicesSection/>
+            <ReviewsSection/>
         </main>
     )
 }
