@@ -1,4 +1,5 @@
 import AboutSection from "./AboutSection";
+import ContactsSection from "./ContactsSection";
 import MainBanner from "./MainBanner";
 import NewsSection from "./NewsSection";
 import ReviewsSection from "./ReviewsSection";
@@ -12,6 +13,7 @@ export default function MainPage() {
             <ServicesSection/>
             <ReviewsSection/>
             <NewsSection/>
+            <ContactsSection/>
         </main>
     )
 }
